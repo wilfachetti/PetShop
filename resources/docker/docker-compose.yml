@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  mariadb:
+    image: mariadb:latest
+    container_name: mariadb-pet
+    restart: "no"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: petshop
+      MYSQL_PASSWORD: root
+      MYSQL_DATABASE: petshop
+    ports:
+      - 3306:3306
+    volumes:
+      - ../scripts:/scripts 
