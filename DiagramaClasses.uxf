@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLInterface</id>
+    <coordinates>
+      <x>80</x>
+      <y>40</y>
+      <w>100</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>View
+--
+Operation1
+Operation2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLHierarchy</id>
+    <coordinates>
+      <x>130</x>
+      <y>230</y>
+      <w>170</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>type=Package
+root
+	name
+	name
+		name
+		name
+root
+	name</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

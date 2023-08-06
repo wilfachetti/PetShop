@@ -26,17 +26,20 @@ public class ClientesTableModel extends AbstractTableModel {
 		return colunas.length;
 	}
 
+	@Override
 	public String getColumnName(int columnIndex) {
 		return colunas[columnIndex];
 	}
 
-	public Class getColumnClass(int columnIndex) {
+	@Override
+	public Class<?> getColumnClass(int columnIndex) {
 		if (columnIndex == COL_ID) {
 			return Integer.class;
 		}
 		return String.class;
 	}
 
+	@Override
 	public boolean isCellEditable(int rowIndex, int	columnIndex) {
 		return false;
 	}
@@ -56,6 +59,7 @@ public class ClientesTableModel extends AbstractTableModel {
 		return "";
 	}
 
+	@Override
 	public void setValueAt(Object aValue, int row, int column) {
 		ClienteModel u = linhas.get(row);
 		if (column == COL_ID) {
